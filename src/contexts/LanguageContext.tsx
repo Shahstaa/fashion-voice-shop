@@ -133,6 +133,10 @@ const translations: { [key: string]: Translations } = {
         remove: 'Remove',
         quantity: 'Qty',
       },
+      surprise: {
+        button: "Surprise Me",
+        today: "Today's Pick",
+      },
       merchant: {
         brand: 'Zibda',
         dashboard: {
@@ -388,6 +392,10 @@ const translations: { [key: string]: Translations } = {
         continueShopping: 'متابعة التسوق',
         remove: 'إزالة',
         quantity: 'الكمية',
+      },
+      surprise: {
+        button: "فاجئني",
+        today: "اختيار اليوم",
       },
       merchant: {
         brand: 'زبدة',

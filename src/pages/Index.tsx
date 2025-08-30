@@ -15,6 +15,7 @@ import { useVoice } from '@/hooks/useVoice';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useState as useReactState } from 'react';
 import { useTheme } from '@/contexts/ThemeContext';
+import SurpriseMe from "@/components/SurpriseMe"; 
 
 export interface CartItem {
   id: string;
@@ -381,6 +382,11 @@ const Index = () => {
 
         {/* Main Content */}
         <main className={`transition-all duration-300 ${isCartExpanded && currentScreen !== 'cart' ? (isRTL ? 'lg:ml-80' : 'lg:mr-80') : ''}`}>
+          {currentScreen === 'welcome' && (
+          <div className="px-4 md:px-8 lg:px-10 py-6">
+            <SurpriseMe />
+          </div>
+          )}
           {renderScreen()}
         </main>
       </div>
